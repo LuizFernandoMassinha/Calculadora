@@ -66,7 +66,7 @@ export default function App() {
       <View style={styles.results}>
         <Text style={styles.historyText}>{lastNumber}</Text>
         <Text style={styles.resultText}>{currentNumber}</Text>
-      <View>
+      </View>
 
       {/* Area onde os botões são exibidos*/}
       <View style={styles.buttons}>
@@ -79,7 +79,7 @@ export default function App() {
           : // Mapeamento dos outros botões
           <TouchableOpacity onPress={() => handleInput(button)} key={button} style={styles.button}>
             <Text style={[styles.textButton, {color: typeof(button) === 'number' ? 'black': '#0093a6'}]}>{button}</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> 
         )}
       </View>
     </View>
